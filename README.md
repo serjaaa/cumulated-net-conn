@@ -42,7 +42,7 @@ The output file is a single matrix expressed as a list (omitting null weights) i
 
 ## References
 
-[[Ser-Giacomi et al. 2021]](https://www.nature.com/articles/s41559-018-0587-2) Ser-Giacomi, E.,  (2021). Explicit and implicit network connectivity: Analytical formulation and application to transport processes. *Physical Review E*
+[[Ser-Giacomi et al. 2021]](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.042309) Ser-Giacomi, E., et al. Explicit and implicit network connectivity: Analytical formulation and application to transport processes. *Physical Review E* 103, 042309 (2021)
 
 
 

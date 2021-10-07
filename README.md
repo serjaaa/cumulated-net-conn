@@ -27,9 +27,9 @@ The codes called `cumulated_multistep_explicit_connectivity.py` and `cumulated_m
 
 #### Inputs
 
-The main input files are:
+The main inputs are:
 
-- A sequence of adjacency matrices file-names `finname` describing the snapshots of the temporal network analyzed (each single adjacency matrix file are written in list format).
+- A sequence of adjacency matrices file-names `finname` describing the snapshots of the temporal network analyzed (each single adjacency matrix file are written in list format). For the proper normalization of the matrix refer to [Ser-Giacomi et al. (2021)](#references) and to the toy matrix `toy_net_right.dat` in the repository.
 - The number of nodes `N` in the network.
 - The maximum number of steps `M` considered (the minimum number is by default equal to 1).
 

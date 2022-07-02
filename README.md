@@ -23,7 +23,7 @@ This documentation is organized as follows:
 #### Description
 
 - The codes called `cumulated_multistep_explicit_connectivity.py` and `cumulated_multistep_implicit_connectivity.py` provide cumulated explicit and implicit connectivity probabilities for every pair of nodes in a temporal network. The calculation is performed as a sequence of sparse matrix products using the `scipy.sparse` library. 
-- The file `toy_net_right.dat` is the adjacency matrix (as list format) of the toy network of Figure 5 (panel b) of [Ser-Giacomi et al. (2021)](#references).
+- The file `toy_net_right.dat` is the adjacency matrix (written in list format) of the toy network of Figure 5 (panel b) of [Ser-Giacomi et al. (2021)](#references). The format for any input matrix should thus respect the format of `toy_net_right.dat`: for each row the first element is the origin node, the second is the destination node, the third is the weight of the link between the two.
 
 #### Inputs
 

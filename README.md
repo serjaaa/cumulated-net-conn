@@ -31,8 +31,8 @@ The main inputs to run the code are:
 
 - A sequence of adjacency matrices file-names `finname` describing the snapshots of the temporal network analyzed. The format for any input matrix should be a list  omitting null weights (as in `toy_net_right.dat`). In detail:
 	- Each row of the list correspond to a link with non-zero weight
-	- The first element of each row is the origin node, the second is the destination node, the third is the weight of the link between the two.
-	- For the proper normalization of the weights refer to [Ser-Giacomi et al. (2021)](#references) and to the toy matrix `toy_net_right.dat` .
+	- The first element of each row is the origin node, the second is the destination node, the third is the weight of the link between them.
+	- For the proper normalization of the weights (that should correspond to probabilities) refer to [Ser-Giacomi et al. (2021)](#references) and to the toy matrix `toy_net_right.dat` .
 - The number of nodes `N` in the network.
 - The maximum number of steps `M` considered (the minimum number is by default equal to 1).
 

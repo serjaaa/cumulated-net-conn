@@ -8,7 +8,7 @@ import scipy.io
 # ############################ INPUT PARAMETERS AND DEFINITIONS
 
 # name input directory
-findir = '#insert'
+findir = ''
 
 # The list finname is the sequence of matrices we need (for M steps we should have M matrices in this sequence), they should be properly normalized as in the paper.
 #
@@ -18,7 +18,7 @@ findir = '#insert'
 # BACKWARD IN TIME (use B matrices, defined and normalized as in the paper):
 # the first matrix on the finname list (ie. finname[0]) should be the one representing the dynamics from t_{M} to t_{M-1}. The second (ie. finname[1]) from t_{M-1} to t_{M-2}, etc.
 
-finname = [#insert]
+finname = []
 
 
 # Output path

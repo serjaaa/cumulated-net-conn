@@ -2,7 +2,7 @@
 
 ## Overview
 
-The repository `cumulated-net-conn` contains the Python codes designed to compute explicit and implicit cumulated connectivity probabilities given a generic  directed, weighted & temporal network. When using this code, please acknowledge the authors by citing  [Ser-Giacomi et al. (2021)](#references).
+The repository `cumulated-net-conn` contains the Python codes designed to compute cumulated explicit and implicit connectivity probabilities given a generic  directed, weighted & temporal network. When using this code, please acknowledge the authors by citing  [Ser-Giacomi et al. (2021)](#references).
 
 
 
@@ -23,13 +23,16 @@ This documentation is organized as follows:
 #### Description
 
 - The codes called `cumulated_multistep_explicit_connectivity.py` and `cumulated_multistep_implicit_connectivity.py` provide cumulated explicit and implicit connectivity probabilities for every pair of nodes in a temporal network. The calculation is performed as a sequence of sparse matrix products using the `scipy.sparse` library. 
-- The file `toy_net_right.dat` is the adjacency matrix (written in list format) of the toy network of Figure 5 (panel b) of [Ser-Giacomi et al. (2021)](#references). The format for any input matrix should thus respect the format of `toy_net_right.dat`: for each row the first element is the origin node, the second is the destination node, the third is the weight of the link between the two.
+- The file `toy_net_right.dat` is the adjacency matrix of the toy network of Figure 5 (panel b) of [Ser-Giacomi et al. (2021)](#references). 
 
 #### Inputs
 
 The main inputs to run the code are:
 
-- A sequence of adjacency matrices file-names `finname` describing the snapshots of the temporal network analyzed (each single adjacency matrix file are written in list format). For the proper normalization of the matrix refer to [Ser-Giacomi et al. (2021)](#references) and to the toy matrix `toy_net_right.dat` in the repository.
+- A sequence of adjacency matrices file-names `finname` describing the snapshots of the temporal network analyzed. The format for any input matrix should be a list  omitting null weights (as in `toy_net_right.dat`). In detail:
+	- Each row of the list correspond to a link with non-zero weight
+	- The first element of each row is the origin node, the second is the destination node, the third is the weight of the link between the two.
+	- For the proper normalization of the weights refer to [Ser-Giacomi et al. (2021)](#references) and to the toy matrix `toy_net_right.dat` .
 - The number of nodes `N` in the network.
 - The maximum number of steps `M` considered (the minimum number is by default equal to 1).
 

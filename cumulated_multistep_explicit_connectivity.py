@@ -25,10 +25,10 @@ finname = []
 foutpath = ''
 
 # number nodes (we have to use the notation for which the first node is the 0, the second is the 1, etc.)
-N = #insert
+N = #insert here
 
 # number of steps
-M = #insert
+M = #insert here
 
 # L matrix sparse version (our definition)
 L_s = csc_matrix(np.ones((N,N))-np.identity(N))
